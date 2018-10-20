@@ -8,7 +8,6 @@ exports.parseMetadata = (req, res) => {
         if(err)
             return res.sendError(err)
             
-        console.log(err, fields, files)
         res.status(200).json({name: files['upfile'].name, type: files['upfile'].type, size: files['upfile'].size})
     })
 } 
