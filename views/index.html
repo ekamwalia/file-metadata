@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Index</title>
+    <link href='index.css' type='text/css'>
+</head>
+<body>
+    <div>
+        <h3>File Metadata Parser</h3><br>
+        <p>This is a simple microservice that takes an input and returns the file's metadata such as the file name , it's type and the size of the file.</p>
+    </div>
+    <div>
+        <p>Upload a file to view it's metadata.</p><br>
+    </div>
+    <div>
+        <form action="/api/getMetadata" method="POST"  enctype="multipart/form-data">
+            <input type="file" name="upfile" multiple="multiple"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
